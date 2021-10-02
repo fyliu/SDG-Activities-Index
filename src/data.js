@@ -26,6 +26,8 @@ async function getGoals() {
 }
 
 async function addProject(data) {
+  data.sdg = data.sdg.join(",");
+  data.themes = data.themes.join(",");
   const doc = new GoogleSpreadsheet(URL_SHEET_CODE, null, {
     gzip: false,
   });
