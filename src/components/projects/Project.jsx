@@ -256,6 +256,7 @@ class Project extends React.Component {
                         className={style.readMore}
                         href={`${data.website}`}
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Read More
                       </a>

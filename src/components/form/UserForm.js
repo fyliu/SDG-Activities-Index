@@ -47,6 +47,7 @@ const UserForm = (props) => {
             />
           );
         case formData.activityType === "organization":
+        default:
           return (
             <OrgForm
               formData={formData}
@@ -59,7 +60,6 @@ const UserForm = (props) => {
             />
           );
       }
-      break;
     case 3:
       switch (true) {
         case formData.activityType === "project":
@@ -71,6 +71,7 @@ const UserForm = (props) => {
             />
           );
         case formData.activityType === "organization":
+        default:
           return (
             <ConfirmOrg
               formData={formData}
@@ -79,7 +80,6 @@ const UserForm = (props) => {
             />
           );
       }
-      break;
     default:
       return <Success />;
   }

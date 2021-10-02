@@ -35,7 +35,7 @@ async function addProject(data) {
     .useServiceAccountAuth(cred)
     .catch((err) => console.log("Google Sheets Authentication Error"));
 
-  const info = await doc.loadInfo();
+  await doc.loadInfo();
   const sheet = doc.sheetsByIndex[1];
 
   sheet.addRow(data, function (err) {
