@@ -1,19 +1,13 @@
 import React from "react";
 import {
   Card,
-  Container,
-  CardColumns,
   Col,
   Pagination,
   Row,
-  OverlayTrigger,
-  Tooltip,
-  Button,
   Collapse,
 } from "react-bootstrap";
 import style from "./Project.module.css";
 import { Fade } from "react-reveal";
-import ReactCardFlip from "react-card-flip";
 import StackGrid from "react-stack-grid";
 
 class Project extends React.Component {
@@ -251,6 +245,7 @@ class Project extends React.Component {
                           className={style.readMore}
                           href={`${data.website}`}
                           target="_blank"
+                          rel="noreferrer"
                         >
                           Read More
                         </a>
